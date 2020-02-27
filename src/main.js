@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-03 09:17:57
- * @LastEditors  : Andy
- * @LastEditTime : 2020-02-08 17:09:05
+ * @LastEditors: Andy
+ * @LastEditTime: 2020-02-25 12:31:01
  */
 import Vue from 'vue'
 import App from './App.vue'
@@ -14,8 +14,6 @@ import store from './store'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-
-import '../mock'
 
 import './styles/base.css'
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
@@ -32,5 +30,5 @@ Vue.use(VueAxios, axios)
 new Vue({
   router,
   store,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')
