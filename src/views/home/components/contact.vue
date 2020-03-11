@@ -1,13 +1,13 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-08 12:02:41
  * @LastEditors: Andy
  * @LastEditTime: 2020-02-23 13:08:56
  -->
 <template>
-  <section class="padding bg-grey" id="#contact">
+  <section id="#contact" class="padding bg-grey">
     <div class="container">
       <h2 class="section-title text-center">联系我们</h2>
       <p class="section-lead text-center text-muted">
@@ -21,13 +21,13 @@
             </p>
             <ul class="contact-icon">
               <li>
-                <i class="ion ion-ios-email"></i>
+                <i class="ion ion-ios-email" />
                 <div>limengkai_a@163.com</div>
               </li>
             </ul>
           </div>
           <div class="col-12 col-md-7">
-            <form class="contact row" id="contact-form">
+            <form id="contact-form" class="contact row">
               <div class="form-group col-6">
                 <input
                   type="text"
@@ -35,7 +35,7 @@
                   placeholder="名字"
                   name="name"
                   required=""
-                />
+                >
               </div>
               <div class="form-group col-6">
                 <input
@@ -44,7 +44,7 @@
                   placeholder="邮箱"
                   name="email"
                   required=""
-                />
+                >
               </div>
               <div class="form-group col-12">
                 <input
@@ -53,7 +53,7 @@
                   placeholder="主题"
                   name="subject"
                   required=""
-                />
+                >
               </div>
               <div class="form-group col-12">
                 <textarea
@@ -61,7 +61,7 @@
                   placeholder="内容"
                   name="message"
                   required
-                ></textarea>
+                />
               </div>
               <div class="form-group col-12 mt-2">
                 <button class="btn btn-primary">
@@ -77,6 +77,6 @@
 </template>
 <script>
 export default {
-  name: 'contact'
+  name: 'Contact'
 }
 </script>

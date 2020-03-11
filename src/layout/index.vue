@@ -1,21 +1,21 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-04 12:35:36
  * @LastEditors: Andy
- * @LastEditTime: 2020-02-25 12:10:18
+ * @LastEditTime: 2020-03-02 09:03:24
  -->
 <template>
   <div class="app-wrapper">
     <transition name="fade">
-      <div v-if="changeView">
+      <div v-if="view === 'home'">
         <Navbar />
         <AppMain />
       </div>
     </transition>
     <transition name="fade">
-      <div v-if="changeView">
+      <div v-if="view === 'blog'">
         <Blog />
       </div>
     </transition>
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import Navbar from "./components/navbar";
-import AppMain from "./components/AppMain";
+import Navbar from './components/navbar'
+import AppMain from './components/AppMain'
 import { mapState } from 'vuex'
 const Blog = () => import('../views/blog')
 export default {
-  name: "Layout",
+  name: 'Layout',
   components: { AppMain, Navbar, Blog },
   // data: function() {
   //   return {
@@ -47,13 +47,13 @@ export default {
         view: this.view
       }
     }
-  },
+  }
   // watch: {
   //   getStoreChenage: function() {
   //     this.page = this.$store.state.page;
   //   }
   // }
-};
+}
 </script>
 
 <style lang="scss" scoped>

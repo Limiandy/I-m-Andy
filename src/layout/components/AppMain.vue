@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-05 08:58:36
  * @LastEditors  : Andy
@@ -8,7 +8,7 @@
  -->
 <template>
   <section class="app-main">
-    <router-view/>
+    <router-view />
   </section>
 </template>
 <script>

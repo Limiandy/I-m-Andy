@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-05 11:32:06
  * @LastEditors  : Andy
@@ -8,13 +8,13 @@
  -->
 <template>
   <div class="home">
-    <Hero></Hero>
-    <Features/>
-    <News/>
-    <Project/>
-    <Contact/>
-    <Callout/>
-    <Footer/>
+    <Hero />
+    <Features />
+    <News />
+    <Project />
+    <Contact />
+    <Callout />
+    <Footer />
   </div>
 </template>
 <script>

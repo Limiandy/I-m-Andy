@@ -1,6 +1,6 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-25 09:43:49
  * @LastEditors: Andy
@@ -17,7 +17,7 @@ const mutations = {
 }
 
 const actions = {
-  switchViews({commit}, {view}) {
+  switchViews({ commit }, { view }) {
     commit('SWITCH_VIEWS', view)
   }
 }

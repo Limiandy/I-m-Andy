@@ -6,15 +6,15 @@
  * @LastEditors  : Andy
  * @LastEditTime : 2020-02-08 19:15:52
  */
-import Vue from "vue";
-import Router from "vue-router";
+import Vue from 'vue'
+import Router from 'vue-router'
 
-Vue.use(Router);
+Vue.use(Router)
 
-import Layout from "@/layout";
+import Layout from '@/layout'
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -29,4 +29,4 @@ export default new Router({
       ]
     }
   ]
-});
+})

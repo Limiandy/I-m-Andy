@@ -4,7 +4,7 @@
  * @Author: Andy
  * @Date: 2020-02-03 09:17:57
  * @LastEditors: Andy
- * @LastEditTime: 2020-02-25 12:31:01
+ * @LastEditTime: 2020-02-28 13:47:29
  */
 import Vue from 'vue'
 import App from './App.vue'
@@ -24,6 +24,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 // icons
 import './assets/ionicons/css/ionicons.min.css'
+if (process.env.NODE_ENV === 'production') {
+  const { mockXHR } = require('../mock')
+  mockXHR()
+}
 Vue.config.productionTip = false
 Vue.use(swal)
 Vue.use(VueAxios, axios)

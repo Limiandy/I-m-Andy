@@ -1,6 +1,6 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-09 10:52:48
  * @LastEditors: Andy
@@ -10,7 +10,7 @@
   <footer>
     <div class="container">
       <figure>
-        <img src="../../../assets/logo.png" alt="Logo" />
+        <img src="../../../assets/logo.png" alt="Logo">
       </figure>
       <p>
         Andy &copy; 2020 | 托管于腾讯云

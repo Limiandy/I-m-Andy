@@ -1,6 +1,6 @@
 /*
  * @Descripttion: sweetalert 弹窗美化插件
- * @version: 
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-03 10:15:24
  * @LastEditors  : Andy
@@ -11,7 +11,7 @@ import swal from 'sweetalert'
 
 export default {
   install: (Vue) => {
-    swal.setDefaults ({
+    swal.setDefaults({
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: 'rgb(140,212,245)',

@@ -1,19 +1,19 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-06 09:43:22
  * @LastEditors  : Andy
  * @LastEditTime : 2020-02-07 15:41:52
  -->
 <template>
-  <section class="bg-overlay padding" id="#anchor-3" :style="setBackground">
-    <div class="overlay"></div>
+  <section id="#anchor-3" class="bg-overlay padding" :style="setBackground">
+    <div class="overlay" />
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-6">
           <figure class="projects-picture">
-            <img src="../../../assets/youzhang.png" alt="Youzhang" />
+            <img src="../../../assets/youzhang.png" alt="Youzhang">
           </figure>
         </div>
         <div class="col-12 col-md-6">
@@ -48,17 +48,17 @@
 </template>
 <script>
 export default {
-  name: "project",
+  name: 'Project',
   data: function() {
     return {
       setBackground: {
         backgroundImage:
-          "url(" + require("../../../assets/projects.jpeg") + ")",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundSize: "center"
+          'url(' + require('../../../assets/projects.jpeg') + ')',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'center'
       }
-    };
+    }
   }
-};
+}
 </script>

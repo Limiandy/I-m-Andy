@@ -1,6 +1,6 @@
 /*
  * @Descripttion: 全局设置
- * @version: 
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-03 09:41:50
  * @LastEditors  : Andy

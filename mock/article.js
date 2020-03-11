@@ -4,14 +4,14 @@
  * @Author: Andy
  * @Date: 2020-02-25 14:13:59
  * @LastEditors: Andy
- * @LastEditTime: 2020-02-25 14:40:12
+ * @LastEditTime: 2020-03-02 09:37:36
  */
-import Mock from 'mock.js'
+import Mock from 'mockjs'
 
 const List = []
 const count = 100
 
-const baseContent = '<p>I am testing data, I am testing data.</p><p><img src="https://wpimg.wallstcn.com/4c69009c-0fd4-4153-b112-6cb53d1cf943"></p>'
+const baseContent = 'I am testing data, I am testing data.'
 const image_url = 'https://wpimg.wallstcn.com/e4558086-631c-425c-9430-56ffb46e70b3'
 
 Mock.Random.extend({
@@ -27,7 +27,7 @@ for (let i = 0; i < count; i++) {
     id: '@increment',
     timestamp: +Mock.Random.date('T'),
     author: '@first',
-    title: '@title(5, 10)',
+    title: '@title(2, 4)',
     content_short: 'mock data',
     content: baseContent,
     display_time: '@datetime',
@@ -39,7 +39,7 @@ for (let i = 0; i < count; i++) {
 
 export default [
   {
-    url: 'andy/article/list',
+    url: '/andy/article/list',
     type: 'get',
     response: config => {
       const { importance, type, title, page = 1, limit = 20, sort } = config.query
@@ -50,7 +50,6 @@ export default [
         if (title && item.title.indexOf(title) < 0) return false
         return true
       })
-
       if (sort === '-id') {
         mockList = mockList.reverse()
       }

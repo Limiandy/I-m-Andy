@@ -1,22 +1,22 @@
 <!--
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: Andy
  * @Date: 2020-02-05 13:43:49
  * @LastEditors: Andy
  * @LastEditTime: 2020-02-23 12:44:25
  -->
 <template>
-  <section class="padding" id="#anchor-1">
+  <section id="#anchor-1" class="padding">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-4 col-sm-12" v-for="(feature, index) in features" :key="index">
+        <div v-for="(feature, index) in features" :key="index" class="col-12 col-md-4 col-sm-12">
           <div class="list-item">
             <div class="icon">
-              <i :class="feature.icon"></i>
+              <i :class="feature.icon" />
             </div>
             <div class="desc">
-              <h2>{{ feature.title}}</h2>
+              <h2>{{ feature.title }}</h2>
               <p>{{ feature.desc }}</p>
               <a href="https://github.com/Limiandy/I-m-Andy" target="_blink" class="more">了解更多</a>
             </div>
@@ -28,8 +28,8 @@
 </template>
 <script>
 export default {
-  name: 'features',
-  data: function () {
+  name: 'Features',
+  data: function() {
     return {
       features: [
         {
